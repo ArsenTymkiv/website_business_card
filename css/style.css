@@ -39,11 +39,44 @@ header {
     }
 }
 
+/******LOGO****/
 .logo {
     cursor: pointer;
     width: 60px;
     height: 60px;
+    position: relative;
+    overflow: hidden;
 }
+
+.logo img {
+    position: absolute;
+    width: 60px;
+}
+
+.logo .logo_1 {
+    left: 0;
+    top: 0;
+    transition-delay: 0.3s;
+}
+
+.logo .logo_2 {
+    left: 0;
+    bottom: 0;
+    transition: bottom 0.3s ease-out;
+    transition-delay: 0s;
+}
+
+.logo:hover .logo_1 {
+    left: 60px;
+    transition-delay: 0s;
+    transition: all 0.3s ease-out;
+}
+
+.logo:hover .logo_2 {
+    bottom: 18px;
+    transition-delay: 0.3s;
+}
+/****end LOGO ****/
 
 .nav_links {
     list-style-type: none;
