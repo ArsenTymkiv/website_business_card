@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -13,7 +14,8 @@ body {
 }
 
 .h1 {
-    font-size: 22;
+    font-size: 22px;
+    margin-bottom: 22px;
 }
 
 li,
@@ -33,10 +35,16 @@ header {
     padding: 0 30px;
 }
 
-@media (max-width: 767px) {
-    header {
-        padding: 0 15px;
-    }
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
 }
 
 /******LOGO****/
@@ -76,6 +84,7 @@ header {
     bottom: 18px;
     transition-delay: 0.3s;
 }
+
 /****end LOGO ****/
 
 .nav_links {
@@ -142,13 +151,14 @@ button:hover {
     display: block;
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
 .bicycle {
     min-height: calc(100vh - 60px);
 }
+
 .bicycle img {
     width: 100%;
     max-width: 720px;
@@ -157,22 +167,54 @@ main{
 .container {
     min-height: 100vh;
     display: flex;
-    
+
 }
 
-.left{
-    flex: 55%;
-}
 
-.right{
-    flex: 45%;
+.column {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /*FLEX*/
 .flex {
     display: flex;
 }
+
 .f-center {
     justify-content: center;
     align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*CARD*/
+.card {
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px;
+}
+
+.card p {
+    padding-top: 10px;
+}
+
+.card div{
+    padding: 25px;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 0 15px;
+    }
 }
