@@ -226,29 +226,59 @@ img {
     justify-content: center;
     color: white;
 }
-.footer i{
+
+.footer i {
     /*margin-left: 8px;*/
     padding: 8px 4px;
 }
-.footer .fa-facebook-f{
+
+.footer .fa-facebook-f {
     margin-left: 4px;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: #0088a9;
-    
+
+}
+/* Contact Us */
+.contact-block div:first-of-type {
+    padding: 0px 60px 20px 0px;
 }
 
-.contact-block div{
-   margin: 10px 40px 10px 0px;
-} 
+.contact-block div:last-child {
+    width: 50%;
+    color: black;
+}
 
-.social-links a{
+.social-links a {
     color: black;
     padding-right: 15px;
     transition: all 0.3s ease 0s;
+
 }
 
-.social-links a:hover{
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a:hover {
     color: #0088a9;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin: 10px 0px;
+}
+
+.form input[type=text],
+input[type=email] {
+    padding: 10px;
+}
+
+.form input[type=textarea]{
+    padding: 50px;
+}
