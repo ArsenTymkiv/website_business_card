@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #24252A;
-    padding: 0 30px;
+    padding: 0px 30px;
 }
 
 .t-left {
@@ -172,7 +172,6 @@ main {
     padding: 50px;
     display: flex;
     justify-content: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -238,3 +237,32 @@ img {
     color: #0088a9;
     
 }
+
+.contact-block div{
+   margin: 10px 40px 10px 0px;
+} 
+
+.social-links a{
+    color: black;
+    padding-right: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.social-links a:hover{
+    color: #0088a9;
+}
+
+.field-row {
+    overflow: hidden;
+  }
+  
+  .field-row label {
+    display: block;
+    width: 30%;
+    float: left;
+  }
+  
+  .field-row .field-container {
+    width: 70%;
+    float: left;
+  }
