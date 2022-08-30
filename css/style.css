@@ -252,17 +252,3 @@ img {
     color: #0088a9;
 }
 
-.field-row {
-    overflow: hidden;
-  }
-  
-  .field-row label {
-    display: block;
-    width: 30%;
-    float: left;
-  }
-  
-  .field-row .field-container {
-    width: 70%;
-    float: left;
-  }
