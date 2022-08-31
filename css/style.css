@@ -193,10 +193,11 @@ img {
 /*CARD*/
 .card {
     display: flex;
-    padding: 25px;
+    padding: 50px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
 }
 
 .card img {
@@ -228,7 +229,6 @@ img {
 }
 
 .footer i {
-    /*margin-left: 8px;*/
     padding: 8px 4px;
 }
 
@@ -241,44 +241,57 @@ img {
 
 }
 /* Contact Us */
-.contact-block div:first-of-type {
-    padding: 0px 60px 20px 0px;
+.contact-block div{
+    width: 100%;
+    margin: 0px 20px 10px 0px;
+}
+.contact-block div a{
+    color: black;
+    transition: all 0.3s ease 0s;
 }
 
-.contact-block div:last-child {
-    width: 50%;
-    color: black;
-}
 
 .social-links a {
     color: black;
     padding-right: 15px;
     transition: all 0.3s ease 0s;
-
 }
 
-.social-links {
-    margin-bottom: 20px;
-}
 
-.social-links a:hover {
+
+.contact-block div a:hover {
     color: #0088a9;
 }
+/* FORM  */
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+   
+    background-color: rgba(0, 136, 169, 0.8);
+    color: white;
+    font-size: 14px;
+    padding: 12px 267px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color:rgba(0, 136, 169, 1);
+  }
+  
 
-.form input {
-    margin: 10px 0px;
-}
 
-.form input[type=text],
-input[type=email] {
-    padding: 10px;
-}
-
-.form input[type=textarea]{
-    padding: 50px;
-}
