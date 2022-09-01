@@ -188,18 +188,20 @@
                     <a href="tel:093987654321">+380 987 654 321 </a>
 
                 </div>
-            </div>
-            <h4>Social Media</h4>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <div class="social-links">
+                    <h4>Social Media</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
 
 
-            <h4 class="h1"> Let Us Know</h4>
-            <form action="action_page.php">
+
+
+            <h4 class="h4"> Let Us Know</h4>
+            <form action="action_page.php" class="form">
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -215,9 +217,11 @@
             </form>
 
         </div>
-        <div class="column" style="background-color: rgb(199, 212, 18);">
-
-            <img src="image/Contact-Us.png" alt="">
+        <div class="col-map" style="background-color: rgb(199, 212, 18);">
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1294.9953470946!2d23.978418093199387!3d49.522459464278015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473af57800f6817f%3A0x82b4d2f92cec48b5!2sProgramulka!5e0!3m2!1suk!2sua!4v1662030393578!5m2!1suk!2sua"
+                class="maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div id="map"></div>
         </div>
     </main>
     <footer class="footer">
@@ -225,6 +229,33 @@
             <script>document.write(new Date().getFullYear())</script> , Example Corporation.
         </p>
     </footer>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4CQ7yi6K7vsNIhjyg9KMwINl39jLUfmE&callback=initMap&v=weekly"
+        defer></script>
+
+    <script>
+        let map;
+        let myLatlng = { lat: 49.52305102282631, lng: 23.97955799979991 }; 
+
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                mapId: "245805bc9d7b5c69",
+                center: myLatlng,
+                zoom: 17,
+            });
+            let marker = new google.maps.Marker({
+                position: myLatlng,
+                map,
+                title: "Bicycle",
+                icon: "image/marker_4.png"
+            });
+            marker.setMap(map);
+        }
+
+        window.initMap = initMap;
+    </script>
 </body>
 
 </html>
