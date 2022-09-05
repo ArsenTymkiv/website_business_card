@@ -27,12 +27,12 @@
         <nav>
             <ul class="nav_links">
                 <li class="dropdown"><a href="#">Cycle</a>
-                    <!-- <ul class="submenu">
-                            <li><a href="#">Home#1</a></li>
-                            <li><a href="#">Home#2</a></li>
-                            <li><a href="#">Home#3</a></li>
-                            <li><a href="#">Home#4</a></li>
-                        </ul> -->
+                    <ul class="submenu">
+                        <li><a href="#">Home#1</a></li>
+                        <li><a href="#">Home#2</a></li>
+                        <li><a href="#">Home#3</a></li>
+                        <li><a href="#">Home#4</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="#">Pedal</a></li>
@@ -43,6 +43,27 @@
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact Us</button></a>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="chamber_links">
+            <li class="dropdown"><a href="#">Cycle</a>
+                <!-- <ul class="submenu">
+                    <li><a href="#">Home#1</a></li>
+                    <li><a href="#">Home#2</a></li>
+                    <li><a href="#">Home#3</a></li>
+                    <li><a href="#">Home#4</a></li>
+                </ul> -->
+            </li>
+
+            <li><a href="#">Pedal</a></li>
+            <li><a href="#">Gear</a></li>
+            <li><a href="#">Speed</a></li>
+            <li><a href="#">Break</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
     </header>
     <main class="bicycle flex f-center">
         <img src="image/bicycle.jpg" alt="bicycle">
@@ -229,33 +250,12 @@
             <script>document.write(new Date().getFullYear())</script> , Example Corporation.
         </p>
     </footer>
-
+    <script src="scripts/map.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4CQ7yi6K7vsNIhjyg9KMwINl39jLUfmE&callback=initMap&v=weekly"
         defer></script>
 
-    <script>
-        let map;
-        let myLatlng = { lat: 49.52305102282631, lng: 23.97955799979991 }; 
 
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                mapId: "245805bc9d7b5c69",
-                center: myLatlng,
-                zoom: 17,
-            });
-            let marker = new google.maps.Marker({
-                position: myLatlng,
-                map,
-                title: "Bicycle",
-                icon: "image/marker_4.png"
-            });
-            marker.setMap(map);
-        }
-
-        window.initMap = initMap;
-    </script>
 </body>
 
 </html>

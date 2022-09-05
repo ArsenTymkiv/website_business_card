@@ -133,26 +133,40 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-
+/* submenu */
 .submenu {
-    /* display: none;*/
+    visibility: hidden;
     position: absolute;
+    left: 15px;
     background-color: #24252A;
-    min-width: 90px;
+    max-width: 90px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 23px;
-}
-
-.submenu li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    opacity: 0;
+    transition: none;
 }
 
 .dropdown:hover .submenu {
+    visibility: visible;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.submenu li {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+
+}
+
+.submenu>li>a {
     display: block;
+    padding: 12px 16px;
+}
+
+.dropdown {
+    position: relative;
 }
 
 main {
@@ -172,7 +186,7 @@ main {
 
 
 .column {
-    width: 100%;
+    width: 50%;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -244,12 +258,14 @@ img {
     color: #0088a9;
 
 }
+
 /* Contact Us */
-.contact-block div{
+.contact-block div {
     width: 100%;
     margin: 0px 20px 10px 0px;
 }
-.contact-block div a{
+
+.contact-block div a {
     color: black;
     transition: all 0.3s ease 0s;
 }
@@ -266,52 +282,93 @@ img {
 .contact-block div a:hover {
     color: #0088a9;
 }
+
 /* FORM  */
 
-input[type=text], textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-   
+input[type=text],
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+
     background-color: rgba(0, 136, 169, 0.8);
     color: white;
     font-size: 14px;
-    padding: 12px 267px;
+    width: 100%;
+    height: 40px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color:rgba(0, 136, 169, 1);
-  }
-  
-  .form{
-    margin-top: 10px;
-  }
-  .maps{
-    width:100%; 
-    height:100%; 
-    border:0;
-  }
-
-
-  .col-map {
-    width: 100%;
 }
 
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgba(0, 136, 169, 1);
+}
 
+.form {
+    margin-top: 10px;
+}
 
+.col-map {
+    width: 50%;
+}
+
+/* MOBILE */
+.nav_links, .cta{
+    display: none;
+}
+#icon{
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 30px; 
+    position: relative;
+}
+.chamber_links{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    list-style: none;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background:#24252a;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.chamber_links li{
+    height: 100%;
+}
+.chamber_links li a{
+    font-size: 16px; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.chamber_links a:hover{
+    background:#0e0e11;
+}
 
 
