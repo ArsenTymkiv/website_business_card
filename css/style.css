@@ -344,26 +344,24 @@ input[type=submit]:hover {
     position: relative;
 }
 .chamber_links{
+    border-top: solid 1px rgba(255,255,255,0.6);
     position: absolute;
     top: 60px;
     left: 0px;
     list-style: none;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: auto;
     background:#24252a;
-    display: flex;
-    flex-direction: column;
-    opacity: 0.8;
 }
 .chamber_links li{
     height: 100%;
 }
 .chamber_links li a{
+    display: block;
+    padding: 15px 0px;
     font-size: 16px; 
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
