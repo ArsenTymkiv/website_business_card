@@ -37,6 +37,14 @@ header {
     align-items: center;
     background-color: #24252A;
     padding: 0px 30px;
+    z-index: 1;
+    top: -60px;
+    position: sticky;
+    transition: top 0.3s ease-out;
+}
+
+header.fixed {
+    top: 0;
 }
 
 .t-left {
@@ -359,13 +367,12 @@ input[type=submit]:hover {
     font-size: 16px; 
     height: 100%;
     text-align: center;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
 .hamburger_links a:hover{
     background:#0e0e11;
 }
-
 
 
 @media (max-width: 767px) {
@@ -377,5 +384,27 @@ input[type=submit]:hover {
     }
    .hamburger_nav{
         display: block;
+    }
+    .column{
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .flex-rev {
+        flex-direction: column-reverse;
+    }
+    .col-map {
+        width: 100%;
+        height: 500px;
+    }
+    main {
+        min-height: 100%;
+    }
+    .column, .bicycle{
+        padding: 20px 15px;
+    }
+    .bicycle {
+        min-height: 100%;
     }
 }
