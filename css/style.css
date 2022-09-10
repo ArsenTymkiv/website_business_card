@@ -408,3 +408,11 @@ input[type=submit]:hover {
         min-height: 100%;
     }
 }
+
+
+/* SCROLL */
+
+html {
+    scroll-behavior: smooth;
+  }
+
