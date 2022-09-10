@@ -416,3 +416,11 @@ html {
     scroll-behavior: smooth;
   }
 
+  .active{
+    transition: 0ms;
+    color: #0088a9;
+  }
+
+  .active_b{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
