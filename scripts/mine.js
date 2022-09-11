@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  /*  BUTTON MOBILE */
   let button = document.querySelector('#icon');
   let menu = document.querySelector('.hamburger_links');
-  // console.log(button)
-  button.addEventListener('click', () => menu.classList.toggle('nav_active'));
+  button.addEventListener('click', () =>{ 
+    
+    menu.classList.toggle('nav_active');
+    button.childNodes[1].classList.toggle("fa-xmark");
+  });
+
 
   
 
- 
+ /* SCROLL ACTIVE MENU*/
   let arr_sel = document.querySelectorAll(`[href*="section"]`);
   let elements1 = document.querySelectorAll(`[id^="section"]`);
  
@@ -18,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // checking for partial visibility
     if(position.top < window.innerHeight && position.bottom >= 50) {
       arr_sel.forEach((a_el)=>{
-        let r = a_el.href.match(/[^#]+$/gm);
-        console.log()
+        let r = a_el.href.match(/[^#]+$/);
+        console.log(r[0]);
         if(r[0]===element.id){
           a_el.classList.add("active");
         }else if(element.id==="section7"){
@@ -33,13 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
       })
     }
   })
+
+
+
   });
 
 
 
 
 });
-
+/* SCROLL HEADER  fixed*/
 window.onscroll = function() {showHeader()};
 
 function showHeader() {
