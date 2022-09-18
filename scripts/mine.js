@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.body.addEventListener('click', (e) => {
-    console.log(e.target);
-    console.log(e.target !== document.querySelector('.mobile_nav'));
     if (mobile_menu_items.classList.contains('nav_active') && e.target !== document.querySelector(".mobile_nav i")) {
       handleMobileButton(true);
+    }
+    if(e.target !== document.querySelector("header") && e.target !== document.querySelector(".logo") && e.target !== document.querySelector(".fa-solid") && e.target !== document.querySelector(".logo_1")  && e.target !== document.querySelector(".logo_2")){
+      document.querySelector("header").classList.toggle('headerActive');
     }
   });
 
@@ -33,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
 });
 
 
@@ -43,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /* SCROLL HEADER  fixed*/
+
 window.onscroll = function () { showHeader() };
 
 function showHeader() {
@@ -56,11 +56,10 @@ function showHeader() {
 
 /* SCROLL ACTIVE MENU*/
 function onScrollEventHandler() {
-  // let arr_sel = document.querySelectorAll(`[href*="section"]`);
   let arrSections = document.querySelectorAll('[id^="section"]');
   arrSections.forEach((element) => {
     var position = element.getBoundingClientRect();
-    if (position.top > 0 && position.top < window.innerHeight && position.bottom >= 0) {
+    if (position.top > 0 && position.top < (window.innerHeight/2) && position.bottom >= 0) {
 
       if (document.querySelector('.active')) document.querySelector('.active').classList.remove('active');
       if (document.querySelector('a[href="#' + element.id + '"]')) {
@@ -69,7 +68,6 @@ function onScrollEventHandler() {
     }
   })
 }
-
 
 
 

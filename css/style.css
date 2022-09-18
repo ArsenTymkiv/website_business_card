@@ -43,7 +43,7 @@ header {
     transition: top 0.3s ease-out;
 }
 
-header.fixed {
+.fixed {
     top: 0;
 }
 
@@ -187,7 +187,7 @@ main {
 
 .bicycle img {
     width: 100%;
-    max-width: 720px;
+    max-width: 1080px;
 }
 
 
@@ -228,7 +228,7 @@ img {
 
 .card img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     padding: 30px;
 }
 
@@ -261,9 +261,9 @@ img {
 }
 
 /* Contact Us */
-.contact-block div {
-    width: 100%;
-    margin: 0px 20px 10px 0px;
+.contact-block .flex div {
+    width: 33%;
+    margin-bottom: 10px;
 }
 
 .contact-block div a {
@@ -368,10 +368,10 @@ input[type=submit]:hover {
 
 .mobile_menu li {
     height: 100%;
-    transition: all 0.3s ease-out;  
+    transition: all 0.3s ease-out;
 }
 
-.mobile_menu li a{
+.mobile_menu li a {
     display: block;
     padding: 15px 0px;
     font-size: 16px;
@@ -420,12 +420,24 @@ input[type=submit]:hover {
     }
 
     .column,
-    .bicycle {
+    .bicycle,
+    .card {
         padding: 20px 15px;
     }
 
     .bicycle {
         min-height: 100%;
+    }
+
+    .contact-block .flex div {
+        width: 100%;
+    }
+ 
+    .fixed{
+        top: -60px;
+    }
+    .headerActive{
+        top: 0;
     }
 }
 
@@ -443,3 +455,5 @@ html {
 .active_b {
     background-color: rgba(0, 136, 169, 0.8);
 }
+
+
