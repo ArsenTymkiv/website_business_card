@@ -15,10 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body id="home">
-    <header>
+    <header class="headerActive">
         <a class="logo" href="#home">
             <img class="logo_1" src="image/logo_white_11.png" alt="logo">
             <img class="logo_2" src="image/logo_white_22.png" alt="logo">
@@ -40,11 +43,12 @@
                 <li><a href="#section4">Speed</a></li>
                 <li><a href="#section5">Break</a></li>
                 <li><a href="#section6">About Us</a></li>
+
             </ul>
         </nav>
         <a class="cta" href="#section7"><button>Contact Us</button></a>
         <nav class="mobile_nav">
-                <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
             <ul class="mobile_menu">
                 <li class="dropdown"><a href="#section1">Cycle</a>
                     <!-- <ul class="submenu">
@@ -68,32 +72,32 @@
         <img src="image/bicycle.jpg" alt="bicycle">
     </main>
     <main class="flex" id="section1">
-        <div class="column" style="background-color: pink;">
+        <div class="column">
 
-            <h1 class="h1">Cycle</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
+            <h1 class="h1" data-aos="fade-down">Cycle</h1>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
                 bibendum sem quis conse ctetur mauris hasellus id sollici tudin nibh quisque id lacus molestie feugiat
                 urna sed, bibendum augue quis enim turpis sed iaculis erat vel velit luctus laoreet sed semper arcu
                 dictum lacinia arcu interdum pretium orci sollicitudin quis.</p>
 
         </div>
-        <div class="column f-center" style="background-color: blue;">
+        <div class="column f-center">
 
-            <img src="image/cycle.jpg" alt="cycle">
+            <img src="image/cycle.jpg" alt="cycle" data-aos="fade-down">
 
         </div>
     </main>
 
     <main class="flex flex-rev" id="section2">
-        <div class="column f-center" style="background-color: rgb(196, 21, 50);">
+        <div class="column f-center">
 
-            <img src="image/pedal.jpg" alt="pedal">
+            <img src="image/pedal.jpg" alt="pedal" data-aos="fade-down">
 
         </div>
-        <div class="column" style="background-color: rgb(49, 233, 49);">
+        <div class="column">
 
-            <h2 class="h1"> Pedal</h2>
-            <p>TLorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
+            <h2 class="h1" data-aos="fade-down"> Pedal</h2>
+            <p data-aos="fade-up">TLorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
                 bibendum sem quis conse ctetur mauris hasellus id sollici tudin nibh quisque id lacus molestie feugiat
                 urna sed, bibendum augue quis enim turpis sed iaculis erat vel velit luctus laoreet sed semper arcu
                 dictum lacinia arcu interdum pretium orci sollicitudin quis.</p>
@@ -102,34 +106,34 @@
     </main>
 
     <main class="flex" id="section3">
-        <div class="column" style="background-color: rgb(13, 206, 240);">
+        <div class="column">
 
-            <h2 class="h1">Gear</h2>
-            <p> 8 gears, Carbon powered.
+            <h2 class="h1" data-aos="fade-down">Gear</h2>
+            <p data-aos="fade-up"> 8 gears, Carbon powered.
                 Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
                 bibendum sem quis conse ctetur mauris hasellus id sollici tudin nibh quisque id lacus molestie feugiat
                 urna sed, bibendum augue quis enim turpis sed iaculis erat vel velit luctus laoreet sed semper arcu
                 dictum lacinia arcu interdum pretium orci sollicitudin quis.</p>
 
         </div>
-        <div class="column" style="background-color: rgb(199, 212, 18);">
+        <div class="column">
 
-            <img src="image/gearbox.jpg" alt="gearbox">
+            <img src="image/gearbox.jpg" alt="gearbox" data-aos="fade-down">
 
         </div>
     </main>
 
     <main class="flex flex-rev" id="section4">
-        <div class="column f-center" style="background-color: rgb(240, 13, 13);">
+        <div class="column f-center">
 
 
-            <img src="image/speed.jpg" alt="speed">
+            <img src="image/speed.jpg" alt="speed" data-aos="fade-down">
 
         </div>
-        <div class="column" style="background-color: rgb(86, 18, 212);">
+        <div class="column">
 
-            <h2 class="h1"> Speed</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
+            <h2 class="h1" data-aos="fade-down"> Speed</h2>
+            <p data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
                 bibendum sem quis conse ctetur mauris hasellus id sollici tudin nibh quisque id lacus molestie feugiat
                 urna sed, bibendum augue quis enim turpis sed iaculis erat vel velit luctus laoreet sed semper arcu
                 dictum lacinia arcu interdum pretium orci sollicitudin quis.</p>
@@ -138,25 +142,25 @@
     </main>
 
     <main class="flex" id="section5">
-        <div class="column" style="background-color: rgb(13, 206, 240);">
+        <div class="column">
 
-            <h2 class="h1"> Break</h2>
-            <p>Greatly improved breaks.
+            <h2 class="h1" data-aos="fade-down"> Break</h2>
+            <p data-aos="fade-up">Greatly improved breaks.
                 Lorem ipsum dolor sit amet consectetur adipiscing elitam blandit placerat nibh vulputate sed non
                 bibendum sem quis conse ctetur mauris hasellus id sollici tudin nibh quisque id lacus molestie feugiat
                 urna sed, bibendum augue quis enim turpis sed iaculis erat vel velit luctus laoreet sed semper arcu
                 dictum lacinia arcu interdum pretium orci sollicitudin quis.</p>
 
         </div>
-        <div class="column" style="background-color: rgb(199, 212, 18);">
+        <div class="column">
 
-            <img src="image/break-bicycle.jpg" alt="break-bicycle">
+            <img src="image/break-bicycle.jpg" alt="break-bicycle" data-aos="fade-down">
 
         </div>
     </main>
 
     <main class="flex" id="section6">
-        <div class="card" style="background-color: rgb(240, 13, 13);">
+        <div class="card" data-aos="zoom-in-down">
 
             <img src="image/employees_003.jpg" alt="employees">
 
@@ -166,7 +170,7 @@
                 conse ctetur mauris hasellus id sollici tudin nibh quisque urna sendum cerat nibh vulp.</p>
 
         </div>
-        <div class="card" style="background-color: rgb(238, 111, 6);">
+        <div class="card" data-aos="zoom-in-down"">
 
             <img src="image/employees_002.jpg" alt="employees">
 
@@ -176,7 +180,7 @@
                 conse ctetur mauris hasellus id sollici tudin nibh quisque urna sendum ectetur adipisci.</p>
 
         </div>
-        <div class="card" style="background-color: rgb(243, 14, 243);">
+        <div class="card" data-aos="zoom-in-down">
 
             <img src="image/employees_001.jpg" alt="employees">
 
@@ -190,7 +194,7 @@
         </div>
     </main>
     <main class="flex" id="section7">
-        <div class="column contact-block" style="background-color: rgb(13, 206, 240);">
+        <div class="column contact-block" data-aos="zoom-in">
 
             <h2 class="h1"> Contact Us</h2>
             <div class="flex">
@@ -237,14 +241,16 @@
             </form>
 
         </div>
-        <div class="col-map" style="background-color: rgb(199, 212, 18);">
+        <div class="col-map" data-aos="zoom-in">
             <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1294.9953470946!2d23.978418093199387!3d49.522459464278015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473af57800f6817f%3A0x82b4d2f92cec48b5!2sProgramulka!5e0!3m2!1suk!2sua!4v1662030393578!5m2!1suk!2sua"
                 class="maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             <div id="map"></div>
         </div>
     </main>
+
     <footer class="footer">
+
         <p>&copy; Copyright
             <script>document.write(new Date().getFullYear())</script> , Example Corporation.
         </p>

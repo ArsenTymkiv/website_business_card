@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+  AOS.init();
   /*  MOBILE MENU */
 
   let mobile_menu_button = document.querySelector('.mobile_nav');
@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (mobile_menu_items.classList.contains('nav_active') && e.target !== document.querySelector(".mobile_nav i")) {
       handleMobileButton(true);
     }
-    if(e.target !== document.querySelector("header") && e.target !== document.querySelector(".logo") && e.target !== document.querySelector(".fa-solid") && e.target !== document.querySelector(".logo_1")  && e.target !== document.querySelector(".logo_2")){
-      document.querySelector("header").classList.toggle('headerActive');
+    if (window.innerWidth <= 767) {
+      if (e.target !== document.querySelector("header") && e.target !== document.querySelector(".logo") && e.target !== document.querySelector(".fa-solid") && e.target !== document.querySelector(".logo_1") && e.target !== document.querySelector(".logo_2")) {
+        document.querySelector("header").classList.toggle('headerActive');
+      }
     }
   });
 
@@ -28,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleMobileButton(isBody = false) {
     let button_icon = document.querySelector(".mobile_nav i");
     if (isBody) mobile_menu_items.classList.toggle('nav_active');
-      button_icon.classList.toggle("fa-bars");
-      button_icon.classList.toggle("fa-xmark");
+    button_icon.classList.toggle("fa-bars");
+    button_icon.classList.toggle("fa-xmark");
   }
 
 
@@ -59,7 +61,7 @@ function onScrollEventHandler() {
   let arrSections = document.querySelectorAll('[id^="section"]');
   arrSections.forEach((element) => {
     var position = element.getBoundingClientRect();
-    if (position.top > 0 && position.top < (window.innerHeight/2) && position.bottom >= 0) {
+    if (position.top < window.innerHeight && position.bottom >= 0) {
 
       if (document.querySelector('.active')) document.querySelector('.active').classList.remove('active');
       if (document.querySelector('a[href="#' + element.id + '"]')) {
