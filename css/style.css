@@ -439,6 +439,9 @@ input[type=submit]:hover {
     .headerActive{
         top: 0;
     }
+    main {
+        scroll-margin-top: 60px;
+      }
 }
 
 

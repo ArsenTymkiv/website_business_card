@@ -14,11 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (mobile_menu_items.classList.contains('nav_active') && e.target !== document.querySelector(".mobile_nav i")) {
       handleMobileButton(true);
     }
-    if (window.innerWidth <= 767) {
-      if (e.target !== document.querySelector("header") && e.target !== document.querySelector(".logo") && e.target !== document.querySelector(".fa-solid") && e.target !== document.querySelector(".logo_1") && e.target !== document.querySelector(".logo_2")) {
-        document.querySelector("header").classList.toggle('headerActive');
-      }
-    }
+   
   });
 
   window.addEventListener('scroll', function () {
